@@ -52,9 +52,9 @@ st.text("Use this tool to assess your brand’s maturity in the selected territo
 brand_name = st.text_input("Brand", "")
 territory = st.text_input("Territory", "")
 soc_brand = st.number_input("Brand's Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)
-soc_competitor = st.number_input("1° Competitor Brand Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)
-soc_publisher = st.number_input("1° Publisher Competitor Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)
-soc_eretailer = st.number_input("1° eRetailer Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)
+soc_competitor = st.number_input("Top Competitor Brand Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)
+soc_publisher = st.number_input("Top Publisher Competitor Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)
+soc_eretailer = st.number_input("Top eRetailer Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)
 
 if st.button("🔍Get Results"):
     compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publisher, soc_eretailer)

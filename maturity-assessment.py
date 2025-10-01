@@ -31,18 +31,18 @@ def compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publi
     # === OUTPUT ===
     st.subheader("Results")
     st.write(f"**Brand:** {brand_name} | **Territory:** {territory}")
-    st.write(f"Difference vs Competitor: {diff_comp:.1f}%")
-    st.write(f"Difference vs Publisher:  {diff_pub:.1f}%")
-    st.write(f"Difference vs eRetailer:  {diff_er:.1f}%")
-    st.write(f"**Sum of Differences:** {total_diff:.1f}%")
+    #st.write(f"Difference vs Competitor: {diff_comp:.1f}%")
+    #st.write(f"Difference vs Publisher:  {diff_pub:.1f}%")
+    #st.write(f"Difference vs eRetailer:  {diff_er:.1f}%")
+    #st.write(f"**Sum of Differences:** {total_diff:.1f}%")
 
-    st.write(f"**Maturity Level:** {maturity}")
-    st.write(f"**Strategy:** {strategy}")
-    st.write(f"**Number of Content:** {num_content}")
+    st.write(f"**🪴​Maturity Level:** {maturity}")
+    st.write(f"**♟️Strategy:** {strategy}")
+    st.write(f"**📍Number of Content:** {num_content}")
 
     st.subheader("Content Split")
-    st.write(f"Product Pages & Hub Pages: {split_comp:.1f}%")
-    st.write(f"Articles: {split_pub + split_er:.1f}%")
+    st.write(f"🛍️Product Pages & Hub Pages: {split_comp:.1f}%")
+    st.write(f"📰Articles: {split_pub + split_er:.1f}%")
 
 
 # --- STREAMLIT APP ---
@@ -56,5 +56,5 @@ soc_competitor = st.number_input("1° Competitor Brand Share of Click (%)", min_
 soc_publisher = st.number_input("1° Publisher Competitor Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)
 soc_eretailer = st.number_input("1° eRetailer Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)
 
-if st.button("CGet Results"):
+if st.button("🔍Get Results"):
     compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publisher, soc_eretailer)

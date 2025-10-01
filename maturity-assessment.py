@@ -49,7 +49,28 @@ def compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publi
 st.title("Maturity Assessment Tool")
 st.text("Use this tool to assess your brand’s maturity in the selected territory, based on Global Share of Search data. Just enter the Share of Click values for your brand, its top competitor, and the leading publishers and eRetailers — then hit the button to get your strategy.")
 
-brand_name = st.text_input("Brand", "")
+brands = [
+    "Aesop",
+    "Armani",
+    "Carita",
+    "Diesel",
+    "Helena Rubinstein",
+    "IT Cosmetics",
+    "Kiehl's",
+    "Lancome",
+    "Miu Miu",
+    "Mugler",
+    "Prada",
+    "Ralph Lauren",
+    "Shu Uemura",
+    "Takami",
+    "Urban Decay",
+    "Valentino",
+    "YSL",
+    "Youth To The People"
+]
+
+brand_name = st.selectbox("Select Brand", brands, index=None, placeholder="Choose a brand")
 territory = st.text_input("Territory", "")
 soc_brand = st.number_input("Brand's Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)
 soc_competitor = st.number_input("Top Competitor Brand Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)

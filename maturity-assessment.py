@@ -46,7 +46,8 @@ def compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publi
 
 
 # --- STREAMLIT APP ---
-st.title("LLD Luxe - Maturity Assessment Tool")
+st.title("Maturity Assessment Tool")
+st.text("This tool will help you define the brand’s maturity level in relation to the selected territory, based on Share of Click data from the Global Share of Search. Enter the Share of Click values for the brand, the competitor brand with the highest Share of Click, and the top-ranking Publishers and eRetailers. Then, press the button.")
 
 brand_name = st.text_input("Brand", "")
 territory = st.text_input("Territory", "")

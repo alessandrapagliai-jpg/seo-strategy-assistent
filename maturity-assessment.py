@@ -41,8 +41,8 @@ def compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publi
     st.write(f"**Number of Content:** {num_content}")
 
     st.subheader("Content Split")
-    st.write(f"PdP + Hub Page: {split_comp:.1f}%")
-    st.write(f"Article: {split_pub + split_er:.1f}%")
+    st.write(f"Product Pages & Hub Pages: {split_comp:.1f}%")
+    st.write(f"Articles: {split_pub + split_er:.1f}%")
 
 
 # --- STREAMLIT APP ---
@@ -51,10 +51,10 @@ st.text("Use this tool to assess your brand’s maturity in the selected territo
 
 brand_name = st.text_input("Brand", "")
 territory = st.text_input("Territory", "")
-soc_brand = st.number_input("Brand's SOC (%)", min_value=0.0, max_value=100.0, value=0.0)
-soc_competitor = st.number_input("1° Competitor Brand SOC (%)", min_value=0.0, max_value=100.0, value=0.0)
-soc_publisher = st.number_input("1° Publisher Competitor SOC (%)", min_value=0.0, max_value=100.0, value=0.0)
-soc_eretailer = st.number_input("1° eRetailer SOC (%)", min_value=0.0, max_value=100.0, value=0.0)
+soc_brand = st.number_input("Brand's Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)
+soc_competitor = st.number_input("1° Competitor Brand Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)
+soc_publisher = st.number_input("1° Publisher Competitor Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)
+soc_eretailer = st.number_input("1° eRetailer Share of Click (%)", min_value=0.0, max_value=100.0, value=0.0)
 
-if st.button("Compute Strategy"):
+if st.button("CGet Results"):
     compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publisher, soc_eretailer)

@@ -46,14 +46,14 @@ def compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publi
 
 
 # --- STREAMLIT APP ---
-st.title("LLD Luxe - SEO Strategy Assistant")
+st.title("LLD Luxe - Maturity Assessment Tool")
 
 brand_name = st.text_input("Brand", "")
 territory = st.text_input("Territory", "")
-soc_brand = st.number_input("Brand's SOC (%)", 0.0, 100.0, 50.0)
-soc_competitor = st.number_input("1° Competitor Brand SOC (%)", 0.0, 100.0, 40.0)
-soc_publisher = st.number_input("1° Publisher Competitor SOC (%)", 0.0, 100.0, 30.0)
-soc_eretailer = st.number_input("1° eRetailer SOC (%)", 0.0, 100.0, 20.0)
+soc_brand = st.number_input("Brand's SOC (%)", min_value=0.0, max_value=100.0, value=0.0)
+soc_competitor = st.number_input("1° Competitor Brand SOC (%)", min_value=0.0, max_value=100.0, value=0.0)
+soc_publisher = st.number_input("1° Publisher Competitor SOC (%)", min_value=0.0, max_value=100.0, value=0.0)
+soc_eretailer = st.number_input("1° eRetailer SOC (%)", min_value=0.0, max_value=100.0, value=0.0)
 
 if st.button("Compute Strategy"):
     compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publisher, soc_eretailer)

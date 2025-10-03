@@ -14,11 +14,11 @@ def compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publi
 
     # === MATURITY & STRATEGY ===
     if total_diff <= 10:
-        maturity, strategy, num_content = "High", "Defend", "10–25"
+        maturity, strategy, num_content = "High", "Defend", "5-10"
     elif total_diff > 50:
-        maturity, strategy, num_content = "Medium", "Growth", "25–50"
+        maturity, strategy, num_content = "Medium", "Growth", "10–20"
     else:
-        maturity, strategy, num_content = "Low", "Attack", "50+"
+        maturity, strategy, num_content = "Low", "Attack", "20+"
 
     # === SPLIT ===
     if total_diff == 0:

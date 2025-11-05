@@ -57,7 +57,7 @@ brands = [
     "Helena Rubinstein",
     "IT Cosmetics",
     "Kiehl's",
-    "Lancome",
+    "Lancôme",
     "Miu Miu",
     "Mugler",
     "Prada",

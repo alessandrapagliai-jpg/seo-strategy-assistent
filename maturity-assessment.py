@@ -29,7 +29,7 @@ def compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publi
         split_er = 100 * diff_er / total_diff
 
     # === OUTPUT ===
-    st.subheader("Results")
+    st.subheader("Assessment Results")
     st.write(f"**Brand:** {brand_name} | **Territory:** {territory}")
     #st.write(f"Difference vs Competitor: {diff_comp:.1f}%")
     #st.write(f"Difference vs Publisher:  {diff_pub:.1f}%")
@@ -40,7 +40,7 @@ def compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publi
     st.write(f"**♟️Strategy:** {strategy}")
     st.write(f"**📍Number of Content:** {num_content}")
 
-    st.subheader("Content Split")
+    st.subheader("Suggested Content Split")
     st.write(f"🛍️Product Pages & Hub Pages: {split_comp:.1f}%")
     st.write(f"📰Articles: {split_pub + split_er:.1f}%")
 

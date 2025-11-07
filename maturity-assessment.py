@@ -1,5 +1,28 @@
 import streamlit as st
 
+# --- CONFIG ---
+st.set_page_config(
+    page_title="Maturity Assessment Tool",
+    page_icon="🪴",
+    layout="centered"
+)
+
+# --- LOGO ---
+st.markdown(
+    """
+    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+        <img src="https://www.navla.ai/wp-content/uploads/2025/01/navla_logo_yw.png" alt="Logo" width="180">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+# --- TITLE & DESCRIPTION ---
+st.title("Maturity Assessment Tool")
+st.text("Use this tool to assess your brand’s maturity in the selected territory, based on Global Share of Search data. "
+        "Just enter the Share of Click values for your brand, its top competitor, and the leading publishers and eRetailers — "
+        "then hit the button to get your strategy.")
+
 def parse_percentage(text):
     """Converte input tipo '45' o '45%' in float"""
     value = text.strip().replace("%", "")
@@ -79,3 +102,14 @@ soc_eretailer = st.number_input("Top eRetailer Share of Click (%)", min_value=0.
 
 if st.button("🔍Get Results"):
     compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publisher, soc_eretailer)
+
+# --- FOOTER ---
+st.markdown(
+    """
+    <hr style="margin-top: 50px;">
+    <div style="text-align: center; color: gray; font-size: 0.9em;">
+        <p>© Navla - A brand of ByTek Srl - VAT IT13056731006 — REA: MI - 2562796 — ByTek is subject to the governance and coordination of Datrix S.p.A. - Built with ❤️ using Streamlit</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)

@@ -67,11 +67,6 @@ def compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publi
     st.write(f"🛍️Product Pages & Hub Pages: {split_comp:.1f}%")
     st.write(f"📰Articles: {split_pub + split_er:.1f}%")
 
-
-# --- STREAMLIT APP ---
-st.title("Maturity Assessment Tool")
-st.text("Use this tool to assess your brand’s maturity in the selected territory, based on Global Share of Search data. Just enter the Share of Click values for your brand, its top competitor, and the leading publishers and eRetailers — then hit the button to get your strategy.")
-
 brands = [
     "Aesop",
     "Armani",

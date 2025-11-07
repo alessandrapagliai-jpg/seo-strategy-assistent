@@ -11,7 +11,9 @@ st.set_page_config(
 st.markdown(
     """
     <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
-        <img src="https://www.navla.ai/wp-content/uploads/2025/01/navla_logo_yw.png" alt="Logo" width="180">
+        <a href="https://www.navla.ai/" target="_blank">
+            <img src="https://raw.githubusercontent.com/alessandrapagliai-jpg/seo-strategy-assistent/refs/heads/main/navla_logo.png" alt="Navla Agency Logo" width="180">
+        </a>
     </div>
     """,
     unsafe_allow_html=True

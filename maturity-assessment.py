@@ -108,7 +108,7 @@ st.markdown(
     """
     <hr style="margin-top: 50px;">
     <div style="text-align: center; color: gray; font-size: 0.9em;">
-        <p>© Navla - A brand of ByTek Srl - VAT IT13056731006 — REA: MI - 2562796 — ByTek is subject to the governance and coordination of Datrix S.p.A. - Built with ❤️ using Streamlit</p>
+        <p>© Navla - A brand of ByTek Srl - VAT IT13056731006 - REA: MI - 2562796 - ByTek is subject to the governance and coordination of Datrix S.p.A. - Built with ❤️ using Streamlit</p>
     </div>
     """,
     unsafe_allow_html=True

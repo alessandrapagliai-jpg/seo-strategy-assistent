@@ -43,7 +43,7 @@ def compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publi
     elif total_diff > 50:
         maturity, strategy, num_content = "Medium", "Growth", "10–20"
     else:
-        maturity, strategy, num_content = "Low", "Basics", "20+"
+        maturity, strategy, num_content = "Low", "Core", "20+"
 
     # === SPLIT ===
     if total_diff == 0:

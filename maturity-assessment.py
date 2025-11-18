@@ -66,8 +66,8 @@ def compute_soc_tool(brand_name, territory, soc_brand, soc_competitor, soc_publi
     st.write(f"**📍Number of Content:** {num_content}")
 
     st.subheader("Suggested Content Split")
-    st.write(f"🛍️Product Pages & Hub Pages: {split_comp:.1f}%")
-    st.write(f"📰Articles: {split_pub + split_er:.1f}%")
+    st.write(f"🛍️Product Pages & Hub Pages: {split_comp:.0f}%")
+    st.write(f"📰Articles: {split_pub + split_er:.0f}%")
 
 brands = [
     "Aesop",
